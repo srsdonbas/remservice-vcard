@@ -27,18 +27,16 @@ function App() {
         </div>
 
         {/* Contact Buttons */}
-        <div className="flex justify-center space-x-4 my-8">
+        <div className="flex justify-center items-center space-x-4 my-8">
           <a 
             href="tel:+380506983215" 
             className="contact-button"
-            data-text="КОНСУЛЬТАЦИЯ"
           >
             <span>КОНСУЛЬТАЦИЯ</span>
           </a>
           <a 
             href="tel:+380959395442" 
             className="contact-button"
-            data-text="ЗАМЕР"
           >
             <span>ЗАМЕР</span>
           </a>

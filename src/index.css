@@ -69,50 +69,48 @@
 }
 
 .contact-button {
-  position: relative;
-  display: inline-flex;
-  width: 160px;
-  height: 45px;
-  margin: 0 15px;
-  perspective: 1000px;
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-size: 10px; /* Reduced by 50% from 20px */
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
   text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin: 0 10px;
 }
 
-.contact-button:before,
-.contact-button:after {
-  position: absolute;
-  content: attr(data-text);
-  height: 55px;
-  width: 180px;
+.contact-button span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 5px solid black;
-  box-sizing: border-box;
-  font-size: 19px;
-  letter-spacing: 1px;
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  transition: transform 0.25s;
 }
 
-.contact-button:before {
-  color: #fff;
-  background: #000;
-  transform: rotateY(0deg) translateZ(25px);
+.contact-button:hover span {
+  background: none;
 }
 
-.contact-button:after {
-  color: #000;
-  transform: rotateX(90deg) translateZ(25px);
-}
-
-.contact-button:hover:before {
-  transform: translateZ(-25px) rotateX(-90deg);
-}
-
-.contact-button:hover:after {
-  transform: rotateY(0deg) translateZ(25px);
+.contact-button:active {
+  transform: scale(0.9);
 }
 
 .social-button {
